@@ -15,6 +15,32 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.close-btn {
+    position: absolute;
+    top: 90px;
+    right: 550px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.close-bt {
+    position: absolute;
+    top: 50px;
+    right: 550px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.close-bt:hover{
+    color: #ff0000;
+}
+
+.close-btn:hover {
+    color: #ff0000;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
