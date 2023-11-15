@@ -12,7 +12,7 @@ nav {
   background: rgb(238,174,202);
   background: linear-gradient(145deg, rgba(238,174,202,1) 15%, rgba(148,187,233,1) 100%);
   padding : 80px 80px; 
-  padding-bottom: 45px;
+  padding-bottom: 80px;
 }
 
 a {
@@ -110,58 +110,94 @@ text-decoration: none;
 }
 
 .brands {
-background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 11%, rgba(148,187,233,1) 100%);
-color:black;
-padding-bottom: 3%;
-padding-top: 3%;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 11%, rgba(148,187,233,1) 100%);
+  color:black;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  }
+  
+  .brands-photos{
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+  justify-content: center ;
+  
+  }
+  
+  .brands h2{
+  padding-left: 23%;
+  padding-bottom:1%;
+  }
+  
+  .brands-photos img{
+  width: 200px;
+  height: 120px;
+  }
+  
+  .logo {
+  height: 5%;
+  width: 5%;
+  position: absolute;
+  left:6%;
+  top:3%; 
+  }
+  
+  .liste-setups {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  }
+  
+  .liste-setups img{
+  grid-row: 1;
+  grid-column: 2;
+  height: 85%;
+  width: 45%;
+  }
+  
+  .login {
+    position: absolute;
+    left:85%;
+    bottom:91%;
+  
+  }
+  
+  .login img {
+    position: absolute;
+    width: 100%;
+  }
+
+  .cart {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initial position, panier caché hors de l'écran */
+    width: 300px;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; /* Ajout de la transition */
+    opacity: 0; /* Ajout de l'opacité initiale */
 }
 
-.brands-photos{
-display: flex;
-flex-direction: row;
-gap:30px;
-justify-content: center ;
-
+.cart.open {
+    right: 0; /* Position lorsque le panier est ouvert */
+    opacity: 1; /* Afficher le panier en ajustant l'opacité */
 }
 
-.brands h2{
-padding-left: 23%;
-padding-bottom:1%;
+.cart .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.brands-photos img{
-width: 200px;
-height: 120px;
+.cart ul {
+    list-style: none;
+    padding: 0;
 }
 
-.logo {
-height: 5%;
-width: 5%;
-position: absolute;
-left:6%;
-top:3%; 
-}
-
-.liste-setups {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: auto;
-}
-
-.liste-setups img{
-grid-row: 1;
-grid-column: 2;
-height: 85%;
-width: 45%;
-}
-
-.login {
-  position: relative; 
-  left:49%;
-  bottom:31px;
-}
-
-.login img {
-width: 2%;
-}
+/* Ajoutez d'autres styles selon vos besoins */
