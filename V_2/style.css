@@ -158,14 +158,14 @@ text-decoration: none;
   
   .login {
     position: absolute;
-    left:85%;
-    bottom:91%;
+    left:91%;
+    bottom:91.8%;
   
   }
   
   .login img {
     position: absolute;
-    width: 100%;
+    width: 120%;
   }
 
   .cart {
@@ -201,3 +201,14 @@ text-decoration: none;
 }
 
 /* Ajoutez d'autres styles selon vos besoins */
+
+.shop {
+  position: absolute;
+  left:88%;
+  bottom:92%;
+}
+
+.shop img {
+  position: absolute;
+  width: 120%;
+}
