@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style-test.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo&family=Inter&family=Manrope&family=Montserrat&family=Oswald&family=Space+Grotesk&display=swap" rel="stylesheet">
     <title>RentPC-Acceuil</title>
+    <script src="cart.js"></script>
 </head>
 
 
@@ -33,11 +34,11 @@
                         <img src="login.png">
                    </a>
                 </div>
-                <!-- <div class="shop">                  
+                <div class="shop">                  
                     <a href="#">
-                        <img src="market.png" alt="image panier">
+                        <img src="market.png" id="openCartBtn" alt="image panier">
                     </a>
-                </div>  -->
+                </div> 
                 <aside id="searchbartop">
                 <input type="checkbox" id="searchbartopbtn" />
                 <label for="searchbartopbtn"> <img src="loupe.png"></label>
@@ -78,6 +79,15 @@
       
 
         </section>
+        <div id="cart" class="cart">
+            <!-- Contenu du panier -->
+            <span class="close" id="closeCartBtn">&times;</span>
+            <h2>Mon Panier</h2>
+            <ul>
+                <!-- Liste des articles dans le panier -->
+            </ul>
+        </div>
+    
     </main>
 
 
