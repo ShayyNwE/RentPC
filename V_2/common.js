@@ -1,8 +1,17 @@
+const FILTER_TYPE_COLOR = 'color';
+const FILTER_TYPE_RES = 'res';
+
+
 document.addEventListener('DOMContentLoaded', function () {
 
     loadCartFromLocalStorage();
     loadTotalPriceFromLocalStorage();
     updateCartItemCount();
+    
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+    checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener('change', filterSetups);
+    });
 });
 
 function addToCart(product) {
@@ -117,3 +126,50 @@ function updateCartItemCount() {
     saveCartToLocalStorage();
     saveTotalPriceToLocalStorage();
  }
+
+function filterSetups() {
+    const colorCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="color"]');
+    const resCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="res"]');
+    const setups = document.querySelectorAll('.liste-setups a');
+
+    setups.forEach(function (setup) {
+        const setupColor = setup.getAttribute('data-color').toLowerCase();
+        const setupRes = setup.getAttribute('data-res');
+        let displaySetup = true;
+
+        colorCheckboxes.forEach(function (checkbox) {
+            const colorFilter = checkbox.getAttribute('data-value').toLowerCase();
+
+            if (checkbox.checked && colorFilter !== 'all' && colorFilter !== setupColor) {
+                displaySetup = false;
+            }
+        });
+
+        resCheckboxes.forEach(function (checkbox) {
+            const resFilter = checkbox.getAttribute('data-value');
+
+            if (checkbox.checked && resFilter !== 'all' && resFilter !== setupRes) {
+                displaySetup = false;
+            }
+        });
+
+        setup.style.display = displaySetup ? 'block' : 'none';
+    });
+
+    console.log('Filtering done.');
+}
+
+function handleCheckboxChange() {
+    filterSetups();
+}
+
+const colorCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="color"]');
+const resCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="res"]');
+
+colorCheckboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', handleCheckboxChange);
+});
+
+resCheckboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', handleCheckboxChange);
+});

@@ -346,6 +346,88 @@ display: block;
 .largeCount {
   margin-left: -4.5px;
 }
+
+.setup-hidden {
+  display: none;
+}
+
+.filter-section {
+  position: relative;
+}
+
+#whiteCheckbox {
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+#blackCheckbox {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+#allCheckbox {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.label-checkbox {
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+
+#whiteLabel {
+  top: 60px;
+}
+
+#blackLabel {
+  top: 40px;
+}
+
+#allLabel {
+  top: 20px;
+}
+
+.res{
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+#firstCheckbox {
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+
+#secondCheckbox {
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
+
+#thirdCheckbox {
+  position: absolute;
+  top: 160px;
+  left: 0;
+}
+
+#firstLabel {
+  top: 120px;
+}
+
+#secondLabel {
+  top: 140px;
+}
+
+#thirdLabel {
+  top: 160px;
+}
+
+
 /* Partie box setup */
 
 .setup1 {
