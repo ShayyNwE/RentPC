@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo&family=Inter&family=Manrope&family=Montserrat&family=Oswald&family=Space+Grotesk&display=swap" rel="stylesheet">
-    <title>RentPC-Acceuil</title>
     <script src="cart.js"></script>
     <script src="common.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo&family=Inter&family=Manrope&family=Montserrat&family=Oswald&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>RentPC-Our-PCs</title>
+
+
+
 </head>
 
 
@@ -22,18 +25,15 @@
                 <img src="Pics/RENTPC.svg" alt="logo">
                 </a>
             </div>
-            <div id="pages_container">
-                <a href="Nos-setup.html">Our Setups</a>
-                <a href="Nos-PCs">Our PCs</a>
-                <a href="#">Our monitors</a>
-                <a href="#">Our Outputs/Inputs</a>
-                <a href="#">Contact us</a>
-            </div>
-            <div id="user_container">
-                <div class="login">
-                   <a href="register.html" alt="logo_login">
-                        <img src="Pics/login.png">
-                   </a>
+            <a href="Nos-setup.html">Our Setups</a>
+            <a href="Nos-PCs.html">Our PCs</a>
+            <a href="#">Our monitors</a>
+            <a href="#">Our Outputs/Inputs</a>
+            <a href="#">Contact us</a>
+              <div class="login">
+                <a href="register.html">
+                    <img src="Pics/login.png" alt="Image login">
+                </a>
                 </div>
                 <div class="shop">                  
                     <a href="#">
@@ -47,14 +47,173 @@
                         <a href="#" id="clearCartBtn">Clear Cart</a>
                     </div>
                 </div>
-                <aside id="searchbartop">
-                <input type="checkbox" id="searchbartopbtn" />
-                <label for="searchbartopbtn"> <img src="Pics/loupe.png"></label>
+            <aside id="searchbartop">
+            <input type="checkbox" id="searchbartopbtn" />
+            <label for="searchbartopbtn"> <img src="Pics/loupe.png"></label>
                 <form method="post" action="">
                 <div><input type="text" value="" /></div>
                  <button type="submit">OK</button>
                 </form>
-                 </aside>
-            </div>
+          </aside>
         </nav>
     </header>
+    <main>
+        <section class="filter-section">
+            <h3>Color</h3>
+            <label for="whiteCheckbox" id="whiteLabel" class="label-checkbox">White</label>
+            <input type="checkbox" id="whiteCheckbox" class="filter-checkbox" data-type="color" data-value="white">
+    
+            <label for="blackCheckbox" id="blackLabel" class="label-checkbox">Black</label>
+            <input type="checkbox" id="blackCheckbox" class="filter-checkbox" data-type="color" data-value="black">
+    
+            <label for="allCheckbox" id="allLabel" class="label-checkbox">All</label>
+            <input type="checkbox" id="allCheckbox" class="filter-checkbox" data-type="color" data-value="all">
+        </section>
+
+        <section class="liste-setups">
+            <a href="#" data-color="black" alt="#">
+                <div class="setup1">
+                    <div class="setup1_pic">
+                        <img src="Pics/Pc1.webp" alt="setup-1">
+                    </div>
+                    <div class="setup1_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €2000.00</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00">  
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="white" alt="#">
+                <div class="setup2">
+                    <div class="setup2_pic">
+                        <img src="Pics/pc2.jpeg" alt="setup-2">
+                    </div>
+                    <div class="setup2_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €2000.00</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="black" alt="#">
+                <div class="setup3">
+                    <div class="setup3_pic">
+                        <img src="Pics/pc3.WEBP" alt="setup-3">
+                    </div>
+                    <div class="setup3_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €XX.XX</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="white" alt="#">
+                <div class="setup4">
+                    <div class="setup4_pic">
+                        <img src="Pics/pc4.jpeg" alt="setup-4">
+                    </div>
+                    <div class="setup4_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €XX.XX</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="black" alt="#">
+                <div class="setup5">
+                    <div class="setup5_pic">
+                        <img src="Pics/pc5.jpeg" alt="setup-5">
+                    </div>
+                    <div class="setup5_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €XX.XX</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="white" alt="#">
+                <div class="setup6">
+                    <div class="setup6_pic">
+                        <img src="Pics/pc6.jpeg" alt="setup-6">
+                    </div>
+                    <div class="setup6_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €XX.XX</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="black" alt="#">
+                <div class="setup7">
+                    <div class="setup7_pic">
+                        <img src="Pics/pc7.jpeg" alt="setup-7">
+                    </div>
+                    <div class="setup7_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €XX.XX</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="white" alt="#">
+                <div class="setup8">
+                    <div class="setup8_pic">
+                        <img src="Pics/pc8.jpeg" alt="setup-8">
+                    </div>
+                    <div class="setup8_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €XX.XX</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="black" alt="#">
+                <div class="setup9">
+                    <div class="setup9_pic">
+                        <img src="Pics/pc9.WEBP" alt="setup-9">
+                    </div>
+                    <div class="setup9_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €XX.XX</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="white" alt="#">
+                <div class="setup10">
+                    <div class="setup10_pic">
+                        <img src="Pics/pc10.jpeg" alt="setup-10">
+                    </div>
+                    <div class="setup10_infos">
+                        <h2>Full Setup</h2>
+                        <p>Breve description du produit.</p>
+                        <p>Price: €XX.XX</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <div id="cart" class="cart">
+        <span class="close" id="closeCartBtn">&times;</span>
+        <h2>Mon Panier</h2>                
+        <ul>
+            
+        </ul>
+        <p id="totalPrice">Total: $0.00</p>
+    </div>
+
+
+
+</body>
+</html>

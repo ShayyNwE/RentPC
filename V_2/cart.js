@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const openCartBtn = document.getElementById('openCartBtn');
     const closeCartBtn = document.getElementById('closeCartBtn');
     const cart = document.getElementById('cart');
-    const goToCartBtn = document.getElementById('goToCartBtn');
+    const goToCartBtn = document.getElementById('goToCartBtn');   
     const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
     const cartItemsList = document.querySelector('.cart ul');
+    
 
     openCartBtn.addEventListener('click', function () {
         cart.classList.add('open');
@@ -41,7 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
         goToCart.style.display = 'none';
     }
 
-    function clearCartButton() {
+
+       
+       function clearCartButton() {
         const goToCart = document.querySelector('.clear-cart');
         goToCart.style.display = 'block';
     }
