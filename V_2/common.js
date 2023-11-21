@@ -1,7 +1,7 @@
 const FILTER_TYPE_COLOR = 'color';
 const FILTER_TYPE_RES = 'res';
 
-
+let cartItems = [];
 document.addEventListener('DOMContentLoaded', function () {
 
     loadCartFromLocalStorage();
@@ -17,20 +17,25 @@ document.addEventListener('DOMContentLoaded', function () {
 function addToCart(product) {
     const productName = product.querySelector('h2').innerText;
     const productPrice = parseFloat(product.querySelector('.add-to-cart-btn').getAttribute('data-price'));
+    const productImg = product.querySelector('.add-to-cart-btn').getAttribute('data-pics');
     const cartItem = document.createElement('li');
+    console.log("Product Image: ", productImg);
+    
     cartItem.innerHTML = `
-       <span>${productName} - €${productPrice.toFixed(2)}</span>
-       <img class="remove-from-cart-img" src="Pics/poubelle.png" alt="Remove" onclick="removeFromCart(this, ${productPrice})">
+        <span>${productName} - €${productPrice.toFixed(2)}</span>
+        <img class="cart-item-img" src="Pics/${productImg}" alt="${productName}">
+        <img class="remove-from-cart-img" src="Pics/poubelle.png" alt="Remove" onclick="removeFromCart(this, ${productPrice})">
     `;
+    
     const cartItemsList = document.querySelector('.cart ul');
     cartItemsList.appendChild(cartItem);
- 
+
     updateTotalPrice(productPrice);
     updateCartItemCount();
     saveCartToLocalStorage();
     saveTotalPriceToLocalStorage();
- }
-
+    saveCartItemsListToLocalStorage();
+}
 
 function updateTotalPrice(price) {
     const totalPriceElement = document.getElementById('totalPrice');
@@ -125,7 +130,15 @@ function updateCartItemCount() {
     updateCartItemCount();
     saveCartToLocalStorage();
     saveTotalPriceToLocalStorage();
+    saveCartItemsListToLocalStorage();
  }
+
+ function saveCartItemsListToLocalStorage() {
+    const cartItemsList = document.querySelector('.cart ul');
+    const items = Array.from(cartItemsList.children).map(item => item.innerText);
+    localStorage.setItem('cartItemsList', JSON.stringify(items));
+}
+
 
 function filterSetups() {
     const colorCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="color"]');

@@ -1,27 +1,25 @@
-const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-const cartItemsList = document.getElementById('cartItemsList');
-document.addEventListener('DOMContentLoaded', function(){
-cartItems.forEach(item => {
-    const liElement = document.createElement('li');
+const urlParams = new URLSearchParams(window.location.search);
+const cartItemsParam = urlParams.get('cartItems');
+const totalPriceParam = urlParams.get('totalPrice');
 
-    // Créer l'élément image
-    const imgElement = document.createElement('img');
-    imgElement.src = item.imageSrc;
-    imgElement.alt = item.name;
 
-    // Créer l'élément span pour le nom du produit
-    const spanElement = document.createElement('span');
-    spanElement.textContent = `${item.name} - €${item.price.toFixed(2)}`;
+if (cartItemsParam) {
+    const cartItemsList = document.getElementById('cartItemsList');
+    const cartItems = JSON.parse(decodeURIComponent(cartItemsParam));
 
-    // Ajouter l'image et le nom du produit à l'élément li
-    liElement.appendChild(imgElement);
-    liElement.appendChild(spanElement);
+    cartItems.forEach(item => {
+        const cartItem = document.createElement('li');
+        cartItem.innerText = item;
+        cartItemsList.appendChild(cartItem);
+    });
 
-    // Ajouter l'élément li à la liste des articles du panier
-    cartItemsList.appendChild(liElement);
-});
-});
+    const totalPriceElement = document.createElement('p');
+    totalPriceElement.innerText = `${decodeURIComponent(totalPriceParam)}`;
+    document.querySelector('.info-section').appendChild(totalPriceElement);
 
-// Vérifier la console du navigateur pour d'éventuelles erreurs
-console.log('Cart items:', cartItems);
-
+    const productImgElement = document.createElement('img');
+    productImgElement.onload = function() {
+        document.querySelector('.info-section').appendChild(productImgElement);
+    };
+    productImgElement.src = 'Pics/' + decodeURIComponent(productImg);
+}
