@@ -130,11 +130,15 @@ function updateCartItemCount() {
 function filterSetups() {
     const colorCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="color"]');
     const resCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="res"]');
+    const procCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="proc"]');
+    const gpuCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="gpu"]');
     const setups = document.querySelectorAll('.liste-setups a');
 
     setups.forEach(function (setup) {
         const setupColor = setup.getAttribute('data-color').toLowerCase();
         const setupRes = setup.getAttribute('data-res');
+        const setupProc = setup.getAttribute('data-proc');
+        const setupGpu = setup.getAttribute('data-gpu');
         let displaySetup = true;
 
         colorCheckboxes.forEach(function (checkbox) {
@@ -153,6 +157,22 @@ function filterSetups() {
             }
         });
 
+        procCheckboxes.forEach(function (checkbox) {
+            const procFilter = checkbox.getAttribute('data-value');
+
+            if (checkbox.checked && procFilter !== 'all' && procFilter !== setupProc) {
+                displaySetup = false;
+            }
+        });
+
+        gpuCheckboxes.forEach(function (checkbox) {
+            const gpuFilter = checkbox.getAttribute('data-value');
+
+            if (checkbox.checked && gpuFilter !== 'all' && gpuFilter !== setupGpu) {
+                displaySetup = false;
+            }
+        });
+
         setup.style.display = displaySetup ? 'block' : 'none';
     });
 
@@ -165,11 +185,21 @@ function handleCheckboxChange() {
 
 const colorCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="color"]');
 const resCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="res"]');
+const procCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="proc"]');
+const gpuCheckboxes = document.querySelectorAll('.filter-section .filter-checkbox[data-type="gpu"]');
 
 colorCheckboxes.forEach(function (checkbox) {
     checkbox.addEventListener('change', handleCheckboxChange);
 });
 
 resCheckboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', handleCheckboxChange);
+});
+
+procCheckboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', handleCheckboxChange);
+});
+
+gpuCheckboxes.forEach(function (checkbox) {
     checkbox.addEventListener('change', handleCheckboxChange);
 });

@@ -357,19 +357,19 @@ display: block;
 
 #whiteCheckbox {
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 0;
 }
 
 #blackCheckbox {
   position: absolute;
-  top: 40px;
+  top: 20px;
   left: 0;
 }
 
 #allCheckbox {
   position: absolute;
-  top: 20px;
+  top: 0;
   left: 0;
 }
 
@@ -380,53 +380,104 @@ display: block;
 }
 
 #whiteLabel {
-  top: 60px;
-}
-
-#blackLabel {
   top: 40px;
 }
 
-#allLabel {
+#blackLabel {
   top: 20px;
+}
+
+#allLabel {
+  top: 0;
 }
 
 .res{
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 0;
 }
 
 #firstCheckbox {
   position: absolute;
-  top: 120px;
+  top: 100px;
   left: 0;
 }
 
 #secondCheckbox {
   position: absolute;
-  top: 140px;
+  top: 120px;
   left: 0;
 }
 
 #thirdCheckbox {
   position: absolute;
-  top: 160px;
+  top: 140px;
   left: 0;
 }
 
 #firstLabel {
-  top: 120px;
+  top: 100px;
 }
 
 #secondLabel {
-  top: 140px;
+  top: 120px;
 }
 
 #thirdLabel {
-  top: 160px;
+  top: 140px;
 }
 
+.proc{
+  position: absolute;
+  top: 160px;
+  left: 0;
+}
+
+#ryzenCheckbox {
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+
+#intelCheckbox {
+  position: absolute;
+  top: 220px;
+  left: 0;
+}
+
+#ryzenLabel {
+  top: 200px;
+}
+
+#intelLabel {
+  top: 220px;
+}
+
+.gpu{
+  position: absolute;
+  top: 240px;
+  left: 0;
+}
+
+#nvidiaCheckbox {
+  position: absolute;
+  top: 280px;
+  left: 0;
+}
+
+#amdCheckbox {
+  position: absolute;
+  top: 300px;
+  left: 0;
+}
+
+#nvidiaLabel {
+  top: 280px;
+}
+
+#amdLabel {
+  top: 300px;
+}
 
 /* Partie box setup */
 

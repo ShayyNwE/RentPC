@@ -11,11 +11,7 @@
     <script src="common.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Exo&family=Inter&family=Manrope&family=Montserrat&family=Oswald&family=Space+Grotesk&display=swap" rel="stylesheet">
     <title>RentPC-Our-setups</title>
-
-
-
 </head>
-
 
 <body>
     <header>
@@ -64,11 +60,7 @@
             <input type="checkbox" id="whiteCheckbox" class="filter-checkbox" data-type="color" data-value="white">
     
             <label for="blackCheckbox" id="blackLabel" class="label-checkbox">Black</label>
-            <input type="checkbox" id="blackCheckbox" class="filter-checkbox" data-type="color" data-value="black">
-    
-            <label for="allCheckbox" id="allLabel" class="label-checkbox">All</label>
-            <input type="checkbox" id="allCheckbox" class="filter-checkbox" data-type="color" data-value="all">
-    
+            <input type="checkbox" id="blackCheckbox" class="filter-checkbox" data-type="color" data-value="black"> 
 
             <h3 class="res">Resolution</h3>
             <label for="firstCheckbox" id="firstLabel" class="label-checkbox">75HZ</label>
@@ -79,10 +71,24 @@
     
             <label for="thirdCheckbox" id="thirdLabel" class="label-checkbox">240HZ</label>
             <input type="checkbox" id="thirdCheckbox" class="filter-checkbox" data-type="res" data-value="240">
+
+            <h3 class="proc">Processor</h3>
+            <label for="ryzenCheckbox" id="ryzenLabel" class="label-checkbox">Ryzen</label>
+            <input type="checkbox" id="ryzenCheckbox" class="filter-checkbox" data-type="proc" data-value="ryzen">
+    
+            <label for="intelCheckbox" id="intelLabel" class="label-checkbox">Intel</label>
+            <input type="checkbox" id="intelCheckbox" class="filter-checkbox" data-type="proc" data-value="intel">
+
+            <h3 class="gpu">GPU</h3>
+            <label for="nvidiaCheckbox" id="nvidiaLabel" class="label-checkbox">Nvidia</label>
+            <input type="checkbox" id="nvidiaCheckbox" class="filter-checkbox" data-type="gpu" data-value="nvidia">
+    
+            <label for="amdCheckbox" id="amdLabel" class="label-checkbox">AMD</label>
+            <input type="checkbox" id="amdCheckbox" class="filter-checkbox" data-type="gpu" data-value="amd">
         </section>
     
         <section class="liste-setups">
-            <a href="#" data-color="black" data-res="75" alt="#">
+            <a href="#" data-color="black" data-res="75" data-proc="ryzen" data-gpu="nvidia" alt="#">
                 <div class="setup1">
                     <div class="setup1_pic">
                         <img src="Pics/setup_1.jpeg">
@@ -95,7 +101,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="white" data-res="165" alt="#">
+            <a href="#" data-color="white" data-res="165" data-proc="ryzen" data-gpu="nvidia" alt="#">
                 <div class="setup2">
                     <div class="setup2_pic">
                         <img src="Pics/setup2.jpeg">
@@ -108,7 +114,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="black" data-res="75" alt="#">
+            <a href="#" data-color="black" data-res="75" data-proc="ryzen" alt="#">
                 <div class="setup3">
                     <div class="setup3_pic">
                         <img src="Pics/setup3.jpeg">
@@ -121,7 +127,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="white" data-res="165" alt="#">
+            <a href="#" data-color="white" data-res="165" data-proc="ryzen" data-gpu="nvidia" alt="#">
                 <div class="setup4">
                     <div class="setup4_pic">
                         <img src="Pics/setup4.jpg">
@@ -134,7 +140,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="black" data-res="240" alt="#">
+            <a href="#" data-color="black" data-res="240" data-proc="intel" data-gpu="nvidia" alt="#">
                 <div class="setup5">
                     <div class="setup5_pic">
                         <img src="Pics/setup5.jpeg">
@@ -147,7 +153,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="white" data-res="165" alt="#">
+            <a href="#" data-color="white" data-res="165" data-proc="ryzen" data-gpu="nvidia" alt="#">
                 <div class="setup6">
                     <div class="setup6_pic">
                         <img src="Pics/setup6.jpeg">
@@ -160,7 +166,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="black" data-res="75" alt="#">
+            <a href="#" data-color="black" data-res="75" data-proc="intel" data-gpu="amd" alt="#">
                 <div class="setup7">
                     <div class="setup7_pic">
                         <img src="Pics/setup7.jpeg">
@@ -173,7 +179,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="white" data-res="75" alt="#">
+            <a href="#" data-color="white" data-res="75" data-proc="ryzen" data-gpu="nvidia" alt="#">
                 <div class="setup8">
                     <div class="setup8_pic">
                         <img src="Pics/setup8.jpeg">
@@ -186,7 +192,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="black" data-res="75" alt="#">
+            <a href="#" data-color="black" data-res="75" data-proc="ryzen" data-gpu="nvidia" alt="#">
                 <div class="setup9">
                     <div class="setup9_pic">
                         <img src="Pics/setup9.jpeg">
@@ -199,7 +205,7 @@
                     </div>
                 </div>
             </a>
-            <a href="#" data-color="white" data-res="75" alt="#">
+            <a href="#" data-color="white" data-res="75" data-proc="intel" data-gpu="nvidia" alt="#">
                 <div class="setup10">
                     <div class="setup10_pic">
                         <img src="Pics/setup10.jpeg">
@@ -223,8 +229,6 @@
         </ul>
         <p id="totalPrice">Total: $0.00</p>
     </div>
-
-
 
 </body>
 </html>
