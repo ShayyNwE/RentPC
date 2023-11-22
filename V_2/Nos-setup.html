@@ -30,7 +30,7 @@
             <a href="Nos-PCs.html">Our PCs</a>
             <a href="Our-monitors.html">Our monitors</a>
             <a href="Our-inputs.html">Our Outputs/Inputs</a>
-            <a href="#">Contact us</a>
+            <a href="contact.html">Contact us</a>
               <div class="login">
                 <a href="register.html">
                     <img src="Pics/login.png" alt="Image login">
@@ -64,40 +64,42 @@
                 <h2>Setups :</h2>
             </div>
         </section>
-        <section class="filter-section">
             <div class="filter-div">
-                <h3 class="color">Color</h3>
-                <label for="whiteCheckbox" id="whiteLabel" class="label-checkbox">White</label>
-                <input type="checkbox" id="whiteCheckbox" class="filter-checkbox" data-type="color" data-value="white">
+                <section class="filter-section">
+            
+                    <h3 class="color">Color</h3>
+                    <label for="whiteCheckbox" id="whiteLabel" class="label-checkbox">White</label>
+                    <input type="checkbox" id="whiteCheckbox" class="filter-checkbox" data-type="color" data-value="white">
         
-                <label for="blackCheckbox" id="blackLabel" class="label-checkbox">Black</label>
-                <input type="checkbox" id="blackCheckbox" class="filter-checkbox" data-type="color" data-value="black"> 
+                    <label for="blackCheckbox" id="blackLabel" class="label-checkbox">Black</label>
+                    <input type="checkbox" id="blackCheckbox" class="filter-checkbox" data-type="color" data-value="black"> 
     
-                <h3 class="res">Resolution</h3>
-                <label for="firstCheckbox" id="firstLabel" class="label-checkbox">75HZ</label>
-                <input type="checkbox" id="firstCheckbox" class="filter-checkbox" data-type="res" data-value="75">
+                    <h3 class="res">Resolution</h3>
+                    <label for="firstCheckbox" id="firstLabel" class="label-checkbox">75HZ</label>
+                    <input type="checkbox" id="firstCheckbox" class="filter-checkbox" data-type="res" data-value="75">
         
-                <label for="secondCheckbox" id="secondLabel" class="label-checkbox">165HZ</label>
-                <input type="checkbox" id="secondCheckbox" class="filter-checkbox" data-type="res" data-value="165">
+                    <label for="secondCheckbox" id="secondLabel" class="label-checkbox">165HZ</label>
+                    <input type="checkbox" id="secondCheckbox" class="filter-checkbox" data-type="res" data-value="165">
         
-                <label for="thirdCheckbox" id="thirdLabel" class="label-checkbox">240HZ</label>
-                <input type="checkbox" id="thirdCheckbox" class="filter-checkbox" data-type="res" data-value="240">
+                    <label for="thirdCheckbox" id="thirdLabel" class="label-checkbox">240HZ</label>
+                    <input type="checkbox" id="thirdCheckbox" class="filter-checkbox" data-type="res" data-value="240">
     
-                <h3 class="proc">Processor</h3>
-                <label for="ryzenCheckbox" id="ryzenLabel" class="label-checkbox">Ryzen</label>
-                <input type="checkbox" id="ryzenCheckbox" class="filter-checkbox" data-type="proc" data-value="ryzen">
+                    <h3 class="proc">Processor</h3>
+                    <label for="ryzenCheckbox" id="ryzenLabel" class="label-checkbox">Ryzen</label>
+                    <input type="checkbox" id="ryzenCheckbox" class="filter-checkbox" data-type="proc" data-value="ryzen">
         
-                <label for="intelCheckbox" id="intelLabel" class="label-checkbox">Intel</label>
-                <input type="checkbox" id="intelCheckbox" class="filter-checkbox" data-type="proc" data-value="intel">
+                    <label for="intelCheckbox" id="intelLabel" class="label-checkbox">Intel</label>
+                    <input type="checkbox" id="intelCheckbox" class="filter-checkbox" data-type="proc" data-value="intel">
     
-                <h3 class="gpu">GPU</h3>
-                <label for="nvidiaCheckbox" id="nvidiaLabel" class="label-checkbox">Nvidia</label>
-                <input type="checkbox" id="nvidiaCheckbox" class="filter-checkbox" data-type="gpu" data-value="nvidia">
+                    <h3 class="gpu">GPU</h3>
+                    <label for="nvidiaCheckbox" id="nvidiaLabel" class="label-checkbox">Nvidia</label>
+                    <input type="checkbox" id="nvidiaCheckbox" class="filter-checkbox" data-type="gpu" data-value="nvidia">
         
-                <label for="amdCheckbox" id="amdLabel" class="label-checkbox">AMD</label>
-                <input type="checkbox" id="amdCheckbox" class="filter-checkbox" data-type="gpu" data-value="amd">
+                    <label for="amdCheckbox" id="amdLabel" class="label-checkbox">AMD</label>
+                    <input type="checkbox" id="amdCheckbox" class="filter-checkbox" data-type="gpu" data-value="amd">
+            
+                </section>
             </div>
-        </section>
     
         <section class="liste-setups">
             <a href="#" id="article1" data-color="black" data-res="165" data-proc="ryzen" data-gpu="nvidia" alt="#">
@@ -242,7 +244,31 @@
         <p id="totalPrice">Total: $0.00</p>
     </div>
 
-
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Adresse : 123 Rue PC, Ville</li>
+                    <li>Téléphone : (123) 456-7890</li>
+                    <li>Email : info@RentPC.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>PC gaming rental</li>
+                    <li>Gaming screen rental</li>
+                    <li>Setup gaming rental</li>
+                    <li>Gaming equipment rental</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Follow Us</h2>
+            </div>
+        </div>
+        <p>&copy; 2023 RentPC. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

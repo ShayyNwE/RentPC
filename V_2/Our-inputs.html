@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="inputs.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="cart.js"></script>
@@ -29,7 +30,7 @@
             <a href="Nos-PCs.html">Our PCs</a>
             <a href="Our-monitors.html">Our monitors</a>
             <a href="Our-inputs.html">Our Outputs/Inputs</a>
-            <a href="#">Contact us</a>
+            <a href="contact.html">Contact us</a>
               <div class="login">
                 <a href="register.html">
                     <img src="Pics/login.png" alt="Image login">
@@ -63,17 +64,20 @@
                 <h2>Peripherals :</h2>
             </div>
         </section>
-        <section class="filter-section">
-            <h3 class="res">Resolution</h3>
-            <label for="firstCheckbox" id="firstLabel" class="label-checkbox">Mouse</label>
-            <input type="checkbox" id="firstCheckbox" class="filter-checkbox" data-type="out" data-value="mouse">
+        <div class="filter-div">
+            <section class="filter-section">
+                <h3 class="res">Resolution</h3>
+                <label for="firstCheckbox" id="firstLabel" class="label-checkbox">Mouse</label>
+                <input type="checkbox" id="firstCheckbox" class="filter-checkbox" data-type="out" data-value="mouse">
     
-            <label for="secondCheckbox" id="secondLabel" class="label-checkbox">Keyboards</label>
-            <input type="checkbox" id="secondCheckbox" class="filter-checkbox" data-type="out" data-value="key">
+                <label for="secondCheckbox" id="secondLabel" class="label-checkbox">Keyboards</label>
+                <input type="checkbox" id="secondCheckbox" class="filter-checkbox" data-type="out" data-value="key">
     
-            <label for="thirdCheckbox" id="thirdLabel" class="label-checkbox">Headset</label>
-            <input type="checkbox" id="thirdCheckbox" class="filter-checkbox" data-type="out" data-value="head">
-        </section>
+                <label for="thirdCheckbox" id="thirdLabel" class="label-checkbox">Headset</label>
+                <input type="checkbox" id="thirdCheckbox" class="filter-checkbox" data-type="out" data-value="head">
+            </section>
+        </div>
+        
         <section class="liste-setups">
             <a href="#" data-out="mouse" alt="#">
                 <div class="setup1">
@@ -217,7 +221,31 @@
         <p id="totalPrice">Total: $0.00</p>
     </div>
 
-
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Adresse : 123 Rue PC, Ville</li>
+                    <li>Téléphone : (123) 456-7890</li>
+                    <li>Email : info@RentPC.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>PC gaming rental</li>
+                    <li>Gaming screen rental</li>
+                    <li>Setup gaming rental</li>
+                    <li>Gaming equipment rental</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Follow Us</h2>
+            </div>
+        </div>
+        <p>&copy; 2023 RentPC. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

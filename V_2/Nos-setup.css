@@ -6,10 +6,13 @@
   }
   .filter-section {
     position: fixed;
-    top: 35 0px;
+    top: 300px;
     margin-left: 30px;
-   
-   
+    background-color: rgb(145, 145, 145);
+    padding: 20px;
+    border-radius: 10px;
+    height: 340px;
+    width: 70px;
   }
   .filter-div {
     position: fixed;
