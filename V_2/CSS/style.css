@@ -201,7 +201,6 @@ text-decoration: none;
     padding: 0;
 }
 
-/* Ajoutez d'autres styles selon vos besoins */
 
 .shop {
   position: absolute;
@@ -253,7 +252,6 @@ text-decoration: none;
   padding: 0;
 }
 
-/* Ajoutez d'autres styles selon vos besoins */
 
 .shop {
 position: absolute;
@@ -309,7 +307,7 @@ animation: slideIn 0.3s ease-out;
 .clear-cart a {
 display: inline-block;
 padding: 10px 20px;
-background-color: #dc3545; /* Couleur rouge, vous pouvez la modifier */
+background-color: #dc3545;
 color: white;
 text-decoration: none;
 border-radius: 5px;
@@ -367,11 +365,9 @@ footer {
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px; /* Espace entre les cases */
 }
 
 .footer-section {
@@ -381,7 +377,7 @@ footer {
 }
 
 .footer-section h2 {
-  color: #ff9800; /* Couleur orange pour le titre */
+  color: #ff9800;
 }
 
 .footer-section ul {
@@ -393,7 +389,65 @@ footer {
   margin-bottom: 8px;
 }
 
+.text-right {
+  text-align: right;
+}
 
+.footer-section:nth-child(4) {
+  align-self: flex-start !important;
+}
+
+.delivery-section {
+  order: -1;
+  margin-left: -50px;
+}
+
+.footer-section:last-child {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-image {
+  max-width: 150px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 20px; /* Ajout de marge à droite pour espacement */
+}
+
+.card-image {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 180px;
+  margin-left: 50px;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column; /* Afficher les éléments en colonne */
+  align-items: flex-end;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.insta-image,
+.facebook-image,
+.linkedin-image {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.social-item p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
 
 /* Partie box setup */
 
