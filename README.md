@@ -10,7 +10,7 @@ Welcome to the RentPC-Home website! This repository contains the HTML and associ
 ## Description
 RentPC-Home is a website for renting gaming PCs, monitors, and setups. Users can explore different products, add them to their cart, and contact the company for inquiries.
 
-Features
+## Features
 * Navigation through different sections: Setups, PCs, Monitors, Outputs/Inputs, and Contact Us.
 * User authentication and registration.
 * Shopping cart functionality.
