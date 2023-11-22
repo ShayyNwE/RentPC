@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="cart.js"></script>
+    <script src="common.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo&family=Inter&family=Manrope&family=Montserrat&family=Oswald&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>RentPC-Our-Monitors</title>
+
+
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                <img src="Pics/RENTPC.svg" alt="logo">
+                </a>
+            </div>
+            <a href="Nos-setup.html">Our Setups</a>
+            <a href="Nos-PCs.html">Our PCs</a>
+            <a href="Our-monitors.html">Our monitors</a>
+            <a href="Our-inputs.html">Our Outputs/Inputs</a>
+            <a href="#">Contact us</a>
+              <div class="login">
+                <a href="register.html">
+                    <img src="Pics/login.png" alt="Image login">
+                </a>
+                </div>
+                <div class="shop">                  
+                    <a href="#">
+                        <img src="Pics/market.png" id="openCartBtn" alt="image panier">
+                        <span id="cartItemCount">0</span>
+                    </a>
+                    <div class="go-to-cart">
+                        <a href="shop.html" id="goToCartBtn">Go to Cart</a>
+                    </div>
+                    <div class="clear-cart">
+                        <a href="#" id="clearCartBtn">Clear Cart</a>
+                    </div>
+                </div>
+            <aside id="searchbartop">
+            <input type="checkbox" id="searchbartopbtn" />
+            <label for="searchbartopbtn"> <img src="Pics/loupe.png"></label>
+                <form method="post" action="">
+                <div><input type="text" value="" /></div>
+                 <button type="submit">OK</button>
+                </form>
+          </aside>
+        </nav>
+    </header>
+    <main>
+        <section class="text_page">
+            <div class="text_pag">
+                <h2>Gaming Monitors :</h2>
+            </div>
+        </section>
+        <section class="filter-section">
+            <h3 class="reso">Resolution</h3>
+            <label for="firstCheckbox" id="firstLabel" class="label-checkbox">75HZ</label>
+            <input type="checkbox" id="firstCheckbox" class="filter-checkbox" data-type="reso" data-value="75">
+    
+            <label for="secondCheckbox" id="secondLabel" class="label-checkbox">165HZ</label>
+            <input type="checkbox" id="secondCheckbox" class="filter-checkbox" data-type="reso" data-value="165">
+    
+            <label for="thirdCheckbox" id="thirdLabel" class="label-checkbox">240HZ</label>
+            <input type="checkbox" id="thirdCheckbox" class="filter-checkbox" data-type="reso" data-value="240">
+        </section>
+        <section class="liste-setups">
+            <a href="#" data-reso="165" alt="#">
+                <div class="setup1">
+                    <div class="setup1_pic">
+                        <img src="Pics/screen1.jpeg" alt="setup-1">
+                    </div>
+                    <div class="setup1_infos">
+                        <h2>X= XC27WQ</h2>
+                        <p>Size : 27" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 165Hz</p>
+                        <p>Price: €21.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="21.99">  
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-reso="75" alt="#">
+                <div class="setup2">
+                    <div class="setup2_pic">
+                        <img src="Pics/screen3.jpeg" alt="setup-2">
+                    </div>
+                    <div class="setup2_infos">
+                        <h2>X= XB22HD</h2>
+                        <p>Size : 22" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 75Hz</p>
+                        <p>Price: €8.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="8.99"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-reso="165" alt="#">
+                <div class="setup3">
+                    <div class="setup3_pic">
+                        <img src="Pics/screen2.jpeg" alt="setup-3">
+                    </div>
+                    <div class="setup3_infos">
+                        <h2>X= XPRO27IPS-W Pro Esports</h2>
+                        <p>Size : 27" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 165Hz</p>
+                        <p>Price: €21.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="21.99"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-reso="240" alt="#">
+                <div class="setup4">
+                    <div class="setup4_pic">
+                        <img src="Pics/screen5.jpeg" alt="setup-4">
+                    </div>
+                    <div class="setup4_infos">
+                        <h2>X= XC27HD</h2>
+                        <p>Size : 27" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 240Hz</p>
+                        <p>Price: €17.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="17.99"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-reso="165" alt="#">
+                <div class="setup5">
+                    <div class="setup5_pic">
+                        <img src="Pics/screen4.jpeg" alt="setup-5">
+                    </div>
+                    <div class="setup5_infos">
+                        <h2>X= XE24HD</h2>
+                        <p>Size : 24" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 165Hz</p>
+                        <p>Price: €13.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="13.99"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-reso="165" alt="#">
+                <div class="setup6">
+                    <div class="setup6_pic">
+                        <img src="Pics/screen6.jpeg" alt="setup-6">
+                    </div>
+                    <div class="setup6_infos">
+                        <h2>X= XC24HD</h2>
+                        <p>Size : 24" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 165Hz</p>
+                        <p>Price: €16.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="16.99"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-color="black" alt="#">
+                <div class="setup7">
+                    <div class="setup7_pic">
+                        <img src="Pics/screen7.jpeg" alt="setup-7">
+                    </div>
+                    <div class="setup7_infos">
+                        <h2>X= XE27CHD</h2>
+                        <p>Size : 27" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 180Hz</p>
+                        <p>Price: €14.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="14.99"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-reso="165" alt="#">
+                <div class="setup8">
+                    <div class="setup8_pic">
+                        <img src="Pics/screen8.jpeg" alt="setup-8">
+                    </div>
+                    <div class="setup8_infos">
+                        <h2>ASRock Phantom Gaming PG32QF2B</h2>
+                        <p>Size : 32" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 165Hz</p>
+                        <p>Price: €28.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="28.99"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-reso="75" alt="#">
+                <div class="setup9">
+                    <div class="setup9_pic">
+                        <img src="Pics/screen9.jpeg" alt="setup-9">
+                    </div>
+                    <div class="setup9_infos">
+                        <h2>X= XG22VA</h2>
+                        <p>Size : 22" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 75Hz</p>
+                        <p>Price: €8.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="8.99"> 
+                    </div>
+                </div>
+            </a>
+            <a href="#" data-reso="75" alt="#">
+                <div class="setup10">
+                    <div class="setup10_pic">
+                        <img src="Pics/screen10.jpeg" alt="setup-10">
+                    </div>
+                    <div class="setup10_infos">
+                        <h2>X= XB27HD</h2>
+                        <p>Size : 27" &emsp;  &emsp;  &emsp; &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp; Resolution : 75Hz</p>
+                        <p>Price: €10.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="10.99"> 
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <div id="cart" class="cart">
+        <span class="close" id="closeCartBtn">&times;</span>
+        <h2>Mon Panier</h2>                
+        <ul>
+            
+        </ul>
+        <p id="totalPrice">Total: $0.00</p>
+    </div>
+
+
+
+</body>
+</html>

@@ -5,13 +5,18 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="Nos-setup.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="cart.js"></script>
     <script src="common.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Exo&family=Inter&family=Manrope&family=Montserrat&family=Oswald&family=Space+Grotesk&display=swap" rel="stylesheet">
     <title>RentPC-Our-setups</title>
+
+
+
 </head>
+
 
 <body>
     <header>
@@ -23,8 +28,8 @@
             </div>
             <a href="Nos-setup.html">Our Setups</a>
             <a href="Nos-PCs.html">Our PCs</a>
-            <a href="#">Our monitors</a>
-            <a href="#">Our Outputs/Inputs</a>
+            <a href="Our-monitors.html">Our monitors</a>
+            <a href="Our-inputs.html">Our Outputs/Inputs</a>
             <a href="#">Contact us</a>
               <div class="login">
                 <a href="register.html">
@@ -37,7 +42,7 @@
                         <span id="cartItemCount">0</span>
                     </a>
                     <div class="go-to-cart">
-                        <a href="#" id="goToCartBtn">Go to Cart</a>
+                        <a href="shop.html" id="goToCartBtn">Go to Cart</a>
                     </div>
                     <div class="clear-cart">
                         <a href="#" id="clearCartBtn">Clear Cart</a>
@@ -54,50 +59,57 @@
         </nav>
     </header>
     <main>
+        <section class="text_page">
+            <div class="text_pag">
+                <h2>Setups :</h2>
+            </div>
+        </section>
         <section class="filter-section">
-            <h3 class="color">Color</h3>
-            <label for="whiteCheckbox" id="whiteLabel" class="label-checkbox">White</label>
-            <input type="checkbox" id="whiteCheckbox" class="filter-checkbox" data-type="color" data-value="white">
+            <div class="filter-div">
+                <h3 class="color">Color</h3>
+                <label for="whiteCheckbox" id="whiteLabel" class="label-checkbox">White</label>
+                <input type="checkbox" id="whiteCheckbox" class="filter-checkbox" data-type="color" data-value="white">
+        
+                <label for="blackCheckbox" id="blackLabel" class="label-checkbox">Black</label>
+                <input type="checkbox" id="blackCheckbox" class="filter-checkbox" data-type="color" data-value="black"> 
     
-            <label for="blackCheckbox" id="blackLabel" class="label-checkbox">Black</label>
-            <input type="checkbox" id="blackCheckbox" class="filter-checkbox" data-type="color" data-value="black"> 
-
-            <h3 class="res">Resolution</h3>
-            <label for="firstCheckbox" id="firstLabel" class="label-checkbox">75HZ</label>
-            <input type="checkbox" id="firstCheckbox" class="filter-checkbox" data-type="res" data-value="75">
+                <h3 class="res">Resolution</h3>
+                <label for="firstCheckbox" id="firstLabel" class="label-checkbox">75HZ</label>
+                <input type="checkbox" id="firstCheckbox" class="filter-checkbox" data-type="res" data-value="75">
+        
+                <label for="secondCheckbox" id="secondLabel" class="label-checkbox">165HZ</label>
+                <input type="checkbox" id="secondCheckbox" class="filter-checkbox" data-type="res" data-value="165">
+        
+                <label for="thirdCheckbox" id="thirdLabel" class="label-checkbox">240HZ</label>
+                <input type="checkbox" id="thirdCheckbox" class="filter-checkbox" data-type="res" data-value="240">
     
-            <label for="secondCheckbox" id="secondLabel" class="label-checkbox">165HZ</label>
-            <input type="checkbox" id="secondCheckbox" class="filter-checkbox" data-type="res" data-value="165">
+                <h3 class="proc">Processor</h3>
+                <label for="ryzenCheckbox" id="ryzenLabel" class="label-checkbox">Ryzen</label>
+                <input type="checkbox" id="ryzenCheckbox" class="filter-checkbox" data-type="proc" data-value="ryzen">
+        
+                <label for="intelCheckbox" id="intelLabel" class="label-checkbox">Intel</label>
+                <input type="checkbox" id="intelCheckbox" class="filter-checkbox" data-type="proc" data-value="intel">
     
-            <label for="thirdCheckbox" id="thirdLabel" class="label-checkbox">240HZ</label>
-            <input type="checkbox" id="thirdCheckbox" class="filter-checkbox" data-type="res" data-value="240">
-
-            <h3 class="proc">Processor</h3>
-            <label for="ryzenCheckbox" id="ryzenLabel" class="label-checkbox">Ryzen</label>
-            <input type="checkbox" id="ryzenCheckbox" class="filter-checkbox" data-type="proc" data-value="ryzen">
-    
-            <label for="intelCheckbox" id="intelLabel" class="label-checkbox">Intel</label>
-            <input type="checkbox" id="intelCheckbox" class="filter-checkbox" data-type="proc" data-value="intel">
-
-            <h3 class="gpu">GPU</h3>
-            <label for="nvidiaCheckbox" id="nvidiaLabel" class="label-checkbox">Nvidia</label>
-            <input type="checkbox" id="nvidiaCheckbox" class="filter-checkbox" data-type="gpu" data-value="nvidia">
-    
-            <label for="amdCheckbox" id="amdLabel" class="label-checkbox">AMD</label>
-            <input type="checkbox" id="amdCheckbox" class="filter-checkbox" data-type="gpu" data-value="amd">
+                <h3 class="gpu">GPU</h3>
+                <label for="nvidiaCheckbox" id="nvidiaLabel" class="label-checkbox">Nvidia</label>
+                <input type="checkbox" id="nvidiaCheckbox" class="filter-checkbox" data-type="gpu" data-value="nvidia">
+        
+                <label for="amdCheckbox" id="amdLabel" class="label-checkbox">AMD</label>
+                <input type="checkbox" id="amdCheckbox" class="filter-checkbox" data-type="gpu" data-value="amd">
+            </div>
         </section>
     
         <section class="liste-setups">
-            <a href="#" id="article1" data-color="black" data-res="75" data-proc="ryzen" data-gpu="nvidia" alt="#">
+            <a href="#" id="article1" data-color="black" data-res="165" data-proc="ryzen" data-gpu="nvidia" alt="#">
                 <div class="setup1">
                     <div class="setup1_pic">
                         <img src="Pics/setup_1.jpeg">
                     </div>
                     <div class="setup1_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €2000.00</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00" data-pics="setup_1.jpeg">
+                        <h2>AWD-IT M100R </h2>
+                        <p>AMD Ryzen 5700X NVIDIA RTX 4070 12GB 27" QHD 165Hz Monitor Desktop PC Gaming Package</p>
+                        <p>Price: €145.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="145.99">  
                     </div>
                 </div>
             </a>
@@ -107,10 +119,10 @@
                         <img src="Pics/setup2.jpeg">
                     </div>
                     <div class="setup2_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €2000.00</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00" data-pics="setup2.jpeg"> 
+                        <h2>X= Infinity White </h2>
+                        <p>AMD Ryzen 5 5600X 6 Core, Nvidia RTX 3060 12GB, 27" 165Hz Monitor Package For Gaming</p>
+                        <p>Price: €106.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="106.99"> 
                     </div>
                 </div>
             </a>
@@ -120,10 +132,10 @@
                         <img src="Pics/setup3.jpeg">
                     </div>
                     <div class="setup3_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €XX.XX</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                        <h2>AWD-IT </h2>
+                        <p>AMD Ryzen 5 5600G Volt with AMD VEGA Graphics Desktop PC Monitor Package</p>
+                        <p>Price: €47.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="47.99"> 
                     </div>
                 </div>
             </a>
@@ -133,10 +145,10 @@
                         <img src="Pics/setup4.jpg">
                     </div>
                     <div class="setup4_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €XX.XX</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                        <h2>AWD-IT X= CUBE White </h2>
+                        <p>AMD Ryzen 7 5700X NVIDIA RTX 4060 8GB Windows 11 27" 180Hz Monitor Desktop PC Gaming Package</p>
+                        <p>Price: €116.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="116.99"> 
                     </div>
                 </div>
             </a>
@@ -146,10 +158,10 @@
                         <img src="Pics/setup5.jpeg">
                     </div>
                     <div class="setup5_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €XX.XX</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                        <h2>AWD-IT X= Infinity </h2>
+                        <p> Intel i5 12400F 6 Core, Nvidia RTX 3060 12GB, 27" 240Hz Curved Monitor Package</p>
+                        <p>Price: €98.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="98.99"> 
                     </div>
                 </div>
             </a>
@@ -159,10 +171,10 @@
                         <img src="Pics/setup6.jpeg">
                     </div>
                     <div class="setup6_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €XX.XX</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                        <h2>AWD-IT 3000D RGB White</h2>
+                        <p>AMD Ryzen 5500, NVIDIA RTX 3060 12GB, Windows 11, 27" 180Hz Monitor Next Day Gaming PC Package</p>
+                        <p>Price: €89.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="89.99"> 
                     </div>
                 </div>
             </a>
@@ -172,10 +184,10 @@
                         <img src="Pics/setup7.jpeg">
                     </div>
                     <div class="setup7_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €XX.XX</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                        <h2>AWD-IT Air Mesh </h2>
+                        <p>Intel i3 12100F Quad Core Radeon RX 6500 XT 4GB PC Monitor Package</p>
+                        <p>Price: €60.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="60.99"> 
                     </div>
                 </div>
             </a>
@@ -185,10 +197,10 @@
                         <img src="Pics/setup8.jpeg">
                     </div>
                     <div class="setup8_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €XX.XX</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                        <h2>X= Mini CUBE </h2>
+                        <p>AMD Ryzen 5 5500 6 Core, Nvidia RTX 4060 8GB, 24" Curved Monitor Package</p>
+                        <p>Price: €105.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="105.99"> 
                     </div>
                 </div>
             </a>
@@ -198,10 +210,10 @@
                         <img src="Pics/setup9.jpeg">
                     </div>
                     <div class="setup9_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €XX.XX</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                        <h2>AWD-IT </h2>
+                        <p>AMD Ryzen QUAD Core GTX 1650 4GB 22" LED Monitor PC Package</p>
+                        <p>Price: €47.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="47.99"> 
                     </div>
                 </div>
             </a>
@@ -211,10 +223,10 @@
                         <img src="Pics/setup10.jpeg">
                     </div>
                     <div class="setup10_infos">
-                        <h2>Full Setup</h2>
-                        <p>Breve description du produit.</p>
-                        <p>Price: €XX.XX</p>
-                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="2000.00"> 
+                        <h2>AWD-IT Air Mesh</h2>
+                        <p>Intel i3 12100F Quad Core NVIDIA RTX 3050 8GB PC Monitor Package</p>
+                        <p>Price: €76.99 / Day</p>
+                        <img src="Pics/ajouter-au-panier.png" class="add-to-cart-btn" data-price="76.99"> 
                     </div>
                 </div>
             </a>
@@ -229,5 +241,8 @@
         </ul>
         <p id="totalPrice">Total: $0.00</p>
     </div>
+
+
+
 </body>
 </html>
