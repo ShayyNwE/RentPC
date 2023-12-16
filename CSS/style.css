@@ -2,6 +2,7 @@ body{
   font-family: 'inter',sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0;
 }
 
 h1, h2, a {
@@ -358,7 +359,7 @@ display: block;
 }
 
 footer {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -377,7 +378,7 @@ footer {
 }
 
 .footer-section h2 {
-  color: #ff9800;
+  color: lightgray;
 }
 
 .footer-section ul {
@@ -448,6 +449,57 @@ footer {
   text-align: center;
   font-size: 13px;
 }
+
+@media screen and (min-width: 1301px) and (max-width: 2000px) {
+  #searchbartop {
+    position:absolute;
+    top:2px; right:2px;
+    }
+    #searchbartop #searchbartopbtn { 
+    position:absolute; 
+    left: -9999px;
+    }
+    #searchbartop #searchbartopbtn + label { 
+    display:inline-block; 
+    cursor:pointer;
+    width:24px; height:24px;
+    line-height:24px;
+    text-align:center;
+    }
+    
+    #searchbartop form {
+    position:absolute; 
+    top:275%; left: -2400%;
+    display:none;
+    }
+    #searchbartop form > button, #searchbartop form > div {
+    display:table-cell;
+    height:24px;
+    }
+    #searchbartop #searchbartopbtn:checked ~ form {
+    display:table;
+    }
+    #searchbartop form > div > input {
+    width:0;
+    }
+    #searchbartop #searchbartopbtn:checked ~ form > div > input {
+    animation: expand 0.5s ease-in-out 1;
+      animation-fill-mode: forwards;
+    }
+    @keyframes expand {
+    from { width:0; }
+    to   { width:200px; }
+    }
+    
+    #searchbartop img {
+    position: absolute; 
+    top: 300%; 
+    right: 300%; 
+    width: 100%;
+    height: auto;
+    border: none;
+    }
+  }
 
 /* Partie box setup */
 

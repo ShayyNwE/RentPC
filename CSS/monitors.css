@@ -1,18 +1,33 @@
-.filter-section {
-    position: fixed;
-    top: 300px;
-    margin-left: 30px;
-    background-color: rgb(145, 145, 145);
-    padding: 20px;
-    border-radius: 10px;
-    height: 200px;
+.reso{
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
-.label-checkbox {
+
+.filter-section {
+    position: fixed;
+    top: 450px;
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    height: 110px;
+    width: 100px;
+    margin-top: 30px;
+  }
+  
+  .label-checkbox {
     position: absolute;
-    top: 0;
-    left: 25px;
+    top: 0px;
+    left: 0px;
 }
+
+.filter-div {
+    position: fixed;
+   
+  }
+
 
 #firstCheckbox {
     position: absolute;
@@ -31,6 +46,18 @@
     top: 100px;
     left: 0;
 }
+
+#allCheckbox {
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+
+.label-checkbox {
+    position: absolute;
+    top: 0;
+    left: 25px;
+  }
 
 #firstLabel {
     top: 60px;

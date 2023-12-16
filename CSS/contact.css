@@ -5,7 +5,8 @@ body {
 }
 
 header {
-    background-color: #333;
+    background: rgb(238,174,202);
+    background: linear-gradient(145deg, rgba(238,174,202,1) 15%, rgba(148,187,233,1) 100%);
     color: #fff;
     text-align: center;
     padding: 20px;
