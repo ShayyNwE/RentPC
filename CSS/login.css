@@ -9,10 +9,24 @@ body {
 }
 
 .form-container {
+    position: relative;
     background-color: #fff;
     padding: 80px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.close-btn:hover {
+    color: #ff0000;
 }
 
 .form-group {

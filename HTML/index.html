@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../CSS/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo&family=Inter&family=Manrope&family=Montserrat&family=Oswald&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>RentPC-Home</title>
+    <script src="../Java/cart.js"></script>
+    <script src="../Java/common.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../HTML/index.html">
+                <img src="../Pics/RENTPC.svg" alt="logo">
+                </a>
+            </div>
+            <div id="pages_container">
+                <a href="../HTML/Nos-setup.html">Our Setups</a>
+                <a href="../HTML/Nos-PCs.html">Our PCs</a>
+                <a href="../HTML/Our-monitors.html">Our monitors</a>
+                <a href="../HTML/Our-inputs.html">Our Outputs/Inputs</a>
+                <a href="../HTML/contact.html">Contact us</a>
+            </div>
+            <div id="user_container">
+                <div class="login">
+                   <a href="../HTML/register.html" alt="logo_login">
+                        <img src="../Pics/login.png">
+                   </a>
+                </div>
+                <div class="shop">                  
+                    <a href="#">
+                        <img src="../Pics/market.png" id="openCartBtn" alt="image panier">
+                        <span id="cartItemCount">0</span>
+                    </a>
+                    <div class="go-to-cart">
+                        <a href="../HTML/shop.html" id="goToCartBtn">Go to Cart</a>
+                    </div>
+                    <div class="clear-cart">
+                        <a href="#" id="clearCartBtn">Clear Cart</a>
+                    </div>
+                </div>
+                <aside id="searchbartop">
+                <input type="checkbox" id="searchbartopbtn" />
+                <label for="searchbartopbtn"> <img src="../Pics/loupe.png"></label>
+                <form method="post" action="">
+                <div><input type="text" value="" /></div>
+                 <button type="submit">OK</button>
+                </form>
+                 </aside>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="presentation">
+            <div class="accueil-photos">
+                <a href="../HTML/Nos-setup.html">
+                    <img src="../Pics/setup.jpg" alt="Nos setups"> 
+                    <h2>Our setups</h2>
+                </a>
+                <a href="../HTML/Nos-PCs.html">
+                    <img src="../Pics/PC.jpg" alt="Nos PC">
+                    <h2>Our PCs</h2> 
+                </a>
+                <a href="../HTML/Our-monitors.html">
+                    <img src="../Pics/ecran.jpg" alt="Nos écrans">
+                    <h2>Our monitors</h2>
+                </a>
+            </div>
+        </section>  
+        <section class="brands">
+            <h2>Principals Brands :</h2>
+            <div class="brands-photos">
+                <img src="../Pics/msi.jpeg" alt="msi">
+                <img src="../Pics/asus.jpeg" alt="asus">
+                <img src="../Pics/amd.jpg" alt="amd">
+                <img src="../Pics/corsair.jpeg" alt="corsair">
+                <img src="../Pics/logitech.png" alt="logitech">
+            </div>
+        </section>
+
+        <div id="cart" class="cart">
+            <span class="close" id="closeCartBtn">&times;</span>
+            <h2>Mon Panier</h2>                
+            <ul>
+                
+            </ul>
+            <p id="totalPrice">Total: $0.00</p>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Address : 93 Cr Charlemagne, 69002 Lyon, France</li>
+                    <li>Phone : +44 341 045 0354</li>
+                    <li>Email : info@RentPC.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>PC gaming rental</li>
+                    <li>Gaming screen rental</li>
+                    <li>Setup gaming rental</li>
+                    <li>Gaming equipment rental</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Follow Us</h2>
+                <div class="social-container">
+                  <div class="social-item">
+                    <img src="../Pics/instagram.png" alt="#" class="footer-image insta-image">
+                    <p class="text-right">Follow us on Instagram : RentPC</p>
+                  </div>
+                  <div class="social-item">
+                    <img src="../Pics/facebook.png" alt="#" class="footer-image facebook-image">
+                    <p class="text-right">Like us on Facebook : @RentPC</p>
+                  </div>
+                  <div class="social-item">
+                    <img src="../Pics/linkedin.png" alt="#" class="footer-image linkedin-image">
+                    <p class="text-right">Connect with us on LinkedIn : RentPC</p>
+                  </div>
+                </div>
+              </div>
+            <div class="footer-section delivery-section">
+                <img src="../Pics/delivery.png" alt="#" class="footer-image delivery-image">
+            </div>
+            <div class="footer-section">
+                <img src="../Pics/card.png" alt="#" class="footer-image card-image">
+            </div>
+        </div>
+        <p>&copy; 2023 RentPC. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
